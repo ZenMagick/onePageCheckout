@@ -1,0 +1,20 @@
+meta:
+  name: 'One Page Checkout'
+  version: '${zenmagick.version}'
+  author: 'zenmagick.org'
+  description: 'Ajax One Page Checkout'
+
+storefront:
+  router:
+    page:
+      onepage_checkout:
+        controller: 'zenmagick\plugins\onePageCheckout\controller\OnePageCheckoutController#step=checkout_address'      
+      checkout_shipping:
+        controller: 'zenmagick\plugins\onePageCheckout\controller\OnePageCheckoutController#step=checkout_address'
+        template: views/opc.php
+      checkout_payment:
+        controller: 'zenmagick\plugins\onePageCheckout\controller\OnePageCheckoutController#step=checkout_payment'
+        template: views/opc.php
+      checkout_confirmation:
+        controller: 'zenmagick\plugins\onePageCheckout\controller\OnePageCheckoutController#step=checkout_confirmation'
+        template: views/opc.php

@@ -1,0 +1,328 @@
+#checkout-steps {width: 78%}
+#checkout-progress {width: 21%}
+/****************progress steps************************/
+#checkout-progress .progress-step div.padding-left {padding-left: 5px;}
+#checkout-progress .progress-step div.padding-right {padding-right: 10px;}
+#checkout-progress .progress-step .sub-content {padding:5px}
+#checkout-progress .progress-title {color:#fff; background:#4C4C56;padding:5px;font-weight:bold}
+#checkout-progress .active .progress-title {background:#3C7EBB;}
+#checkout-progress .progress-content {color:#53535c;border:1px solid #ccc; border-top:none;background:#f5f5f5; font-size:88%;}
+#checkout-progress h3 {color:#4c4c55;font-weight:bold;font-size:100%; padding-bottom:5px;}
+.step-edit-link{color:#3C7EBB;text-decoration:underline;cursor:pointer;}
+/****************checkout steps************************/
+.step.active .step-content{
+border:1px solid #ccc;
+border-top:none;
+margin-bottom:10px;
+padding:8px
+}
+
+/** This is the heading of each step **/
+.step-title .back {height:38px;line-height:38px;color:#fff;}
+
+.step-title .step-heading{font-size:116%;font-weight:bold;padding-left:10px;line-height:44px;}
+.step .step-title {
+background:#4C4C56;
+margin:0;
+border-bottom: 1px solid #ccc;
+}
+/* this won't work on IE6, but we do not care about that browser anymore*/
+.step.loaded.backable .step-title {
+background:#4C4C56;	
+cursor:pointer;
+}
+
+.step.active.loaded .step-title {
+background:#3C7EBB;
+cursor:pointer;
+}
+
+/** This is the counter for each step **/
+.step .step-count {
+background:#3C7EBB none repeat scroll 0 0;
+text-align:center;
+font-size:167%;
+width: 38px;
+}
+
+.step.loaded .step-count {
+background:#3C7EBB none repeat scroll 0 0;
+}
+
+.step.active .step-count {
+background:#3C7EBB none repeat scroll 0 0;
+}
+
+.step a.previous {
+background:transparent url(../images/onepage-checkout/onepage-checkout_previous.gif) no-repeat scroll 0 0;
+line-height:13px;
+padding-left:16px;
+margin: 0 0 10px 10px;
+}
+
+#onepage-checkout .step-content {display:none}
+
+#onepage-checkout .active .step-content {display:block}
+
+#onepage-checkout .step-content h2{color:#3C7EBB; margin:0; font-size:138.5%}
+
+#onepage-checkout .step.loaded{display:block;}
+
+#onepage-checkout .active{display:block;}
+/****************Login/Register************************/
+#checkout_login_register label.email-password{width:125px;display:inline-block;text-align:right}
+
+/****************shipping/billing addresses*************************/
+.shipping-address-selection td, .billing-address-selection td {padding: 3px 0}
+.shipping-address-selection input, .billing-address-selection input {width: 220px; font-size:85%; float:left}
+.shipping-address-selection select, .billing-address-selection select {min-width: 224px; font-size:85%;}
+.shipping-address-selection label, .billing-address-selection label {font-size:85%; color:#3D7FB6; font-weight:bold;}
+.shipping-address-selection input, .billing-address-selection input {display:block;}
+.shipping-address-selection label.error, .billing-address-selection label.error {color:#9e0b0f;}
+
+#checkout_shipping_billing fieldset{margin:8px 0}
+#onepage-checkout-shipping-address-container, #onepage-checkout-payment-address-container {width:48%; padding: 0 5px}
+
+#onepage-checkout_payment_container p {padding: 0.3em}
+.paytype {margin: 5px 0;}
+.paytype label {margin-left:5px}
+#onepage-checkout-payment-address-container {border-left:#ccc 1px solid}
+#smethods td{padding:10px 5px; font-weight:bold;}
+/*#smethods {background:#fbe6e6; font-weight:bold; color:#4c4c55; margin-top:20px;}*/
+.smPrice {color:#3d7fb6;}
+/****************shipping/billing method*************************/
+#onepage-checkout_shipping_container, #onepage-checkout_payment_container {width:48%; padding: 0 5px}
+
+#onepage-checkout_payment_container legend {color:#F18200}
+
+#checkoutShippingContentChoose {margin-top:5px}
+/****************confirmation*************************/
+#onepage-checkout table {width:100%}
+#checkout_confirmation th {background:#e8e8ea;color:#4c4c55}
+#checkout_confirmation .total .name{color:#4c4c55}
+#onepage-checkout .tot .name,#onepage-checkout .tot .price{color:#3C7EBB;font-size:108%;font-weight:bold;}
+#onepage-checkout .tot a{color:#217942;text-decoration:underline;}
+#checkout_confirmation th, #checkout_confirmation td {padding:5px;text-align:left}
+#OPEditCartText {padding-bottom:10px; font-size:85%; font-weight:bold;}
+
+/****************Tooltip*************************/
+#tooltip{width:400px !important;}
+
+.hiddenField{display: none;}
+
+.visibleField{display: inline;}
+/****************Validation********************/
+#checkout_step label.error{
+background:url(../images/onepage-checkout/validation_arrow.gif) no-repeat;
+display:none;
+color:#EA5200;
+font-weight:bold;
+padding-bottom:2px;
+padding-left:14px;
+float:left;
+}
+input.error{border:1px solid #F19900;color:#ea3434;}
+#onepage-checkout .step .message {background:#fbe6e6;color:#ea3434;font-size: 116%;font-weight:bold; margin-bottom:10px;}
+#onepage-checkout .step .message div {padding:5px;}
+/****************Misc*************************/
+#onepage-checkout .hide {display:none}
+
+#onepage-checkout .show {display:block}
+
+#onepage-checkout {
+width:95%;
+margin: 10px auto;
+}
+
+#onepage-checkout legend, #onepage-checkout .step h3{color:#3C7EBB;font-size:116%;font-weight:bold;padding-bottom: 10px;}
+
+#onepage-checkout fieldset div.padded{padding-left:15px}
+
+#onepage-checkout fieldset.padded {padding-left:15px}
+
+#onepage-checkout fieldset.middle {margin-top:10px}
+
+#onepage-checkout .input-label2{color:#3d7fb6;}
+
+#onepage-checkout .input-container {margin:6px 0}
+
+#onepage-checkout_form ol, #checkout_form ul{
+margin:0;
+padding:0;
+}
+
+#onepage-checkout form {margin:0}
+
+#onepage-checkout fieldset {border:0}
+
+#credittypes {padding-bottom:30px;}
+
+.onepage-checkout-left {width:40.5%}
+.onepage-checkout-right {width:58.5%; padding-left: 10px;}
+
+/*billing method*/
+#pm_pt_ceon_sage_pay_direct {background:#e8e8ea; border:1px solid #929298; color:#4c4c55; font-size:93%; padding:15px 5px 15px 20px;}
+#pm_pt_ceon_sage_pay_direct label {font-size: 123.1%;letter-spacing: -1px;}
+#paytypes  table.pt tr td {padding:2px 0px; font-weight:bold;}
+.paytype {padding-bottom:15px; margin:0;}
+#paytypes {padding-top:15px;}
+.fieldRequire {font-size:85%; color:#929298; padding-bottom:30px;}
+
+/* fix css when confirm payment*/
+ul#messages{
+	margin-left:25px;
+	width:74%;
+ 	padding-bottom: 5px;
+}
+ul#messages li{
+	color:white;
+	line-height: 20px;
+}
+ul#messages li a{
+	color:white;
+	font-weight:bold;
+}
+
+
+
+#messages{background: none repeat scroll 0 0 #FBE6E6;
+    list-style: none outside none;
+    margin: 10px auto;
+    width: 95%;}
+#messages{margin: 5px;}
+.creditInput {padding-right: 20px;}
+.instr {padding: 10px 0;}
+p.credittype {font-size: 123.1%; color: #3C7EBB; font-weight: bold;margin-top:-30px;}
+.popupXcheckout {border:1px solid #ccc; width:400px; padding:50px 15px; font-size:161.6%; color:#3d7fb6; letter-spacing:-1px; font-family:Arial, Helvetica, sans-serif; background:#fff;-moz-border-radius: 8px; border-radius: 8px;}
+
+/* refactoring of shopping bag service block */
+
+.shoppingcart_servicebox_headintro {
+  color: #3d7fb6;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.shoppingcart_servicebox {
+  float: left;
+  border: 1px solid #cccccc;
+  font-family: Arial,Helvetica,sans-serif;
+  width: 100%;
+  overflow: visible;
+}
+
+.shoppingcart_servicebox_inner {
+  float: left;
+  width: 33%;
+}
+.shoppingcart_servicebox_inner.trustpilot {
+  float: right;
+  width: 34%;
+}
+
+.shoppingcart_servicebox_inner.more {
+  float: left;
+  width: 66%;
+  text-align: center;  
+}
+
+.shoppingcart_servicebox_headline {
+  color: #4c4c55;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  letter-spacing: -1px;
+  padding: 10px;
+}
+
+.shoppingcart_servicebox_content {
+  font-size: 11.5px;
+  font-weight: bold;
+  color: #4c4c55;  
+  padding: 10px;  
+}
+
+.shoppingcart_servicebox_content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;  
+}
+
+.shoppingcart_servicebox_content li {
+		padding-left: 10px;
+		background: url('../images/blue_arrow.gif') no-repeat 0 3px;
+}
+
+
+.shoppingcart_servicebox_content.more {
+  font-size: 11.5px;
+  color: #3d7fb6;  
+  font-weight: normal;
+}
+
+.shoppingcart_servicebox_content.trustpilot {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  color: #4c4c55;
+}
+
+.shoppingcart_servicebox_content > a, 
+.shoppingcart_servicebox_content.more > a,
+.shoppingcart_servicebox_content.trustpilot > a
+{
+  color: #3d7fb6;
+  text-decoration: underline;
+}
+
+.shoppingcart_servicebox_content > div.tp_reviewer {
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10.5px;
+  color: #3d7fb6;
+  padding-top: 10px;  
+}
+
+.shoppingcart_servicebox_content > div.poweredby, .shoppingcart_servicebox_content > div.poweredby > a {
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8.5px;
+  color: #c0c0c0;
+  padding-top: 10px;  
+}
+
+.shoppingcart_servicebox_rating {
+  display: block;
+  overflow:hidden;
+  float: left;
+  width: 83px;
+  height: 16px;
+  top: 5px;  
+  background: url('../images/review_cogs_5.png');
+  margin-bottom: 15px;
+}
+
+.shoppingcart_servicebox_rating.stars_3 {
+  background: url('../images/review_cogs_3.png');  
+}
+
+.shoppingcart_servicebox_rating.stars_4 {
+  background: url('../images/review_cogs_4.png');
+}
+
+.shoppingcart_servicebox_rating.stars_5 {
+  background: url('../images/review_cogs_5.png');  
+}
+
+.shoppingcart_servicebox_rating.tp_logo {
+  background: url('../images/tp_logo_bag_page.jpg');  
+  float: right;
+  width: 80px;
+  height: 19px;  
+}
+.onepageForgotPassword {text-decoration:underline;padding-left:10px; font-size:90%; font-weight:normal;}
