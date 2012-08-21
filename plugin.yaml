@@ -4,6 +4,8 @@ meta:
   author: 'zenmagick.org'
   description: 'Ajax One Page Checkout'
 
+  context: storefront
+
 storefront:
   router:
     page:
